@@ -1,0 +1,51 @@
+$color: red;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$bg: green;
+@use "sass:math";
+
+ul {
+  display: flex;
+  gap: 40px;
+  color: $color;
+}
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $bg;
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+article[role="main"] {
+  width: math.div(600px, 960px) * 100%;
+}
+
+aside[role="complementary"] {
+  width: math.div(300px, 960px) * 100%;
+  margin-left: auto;
+}

@@ -1,0 +1,44 @@
+ul {
+  display: flex;
+  gap: 40px;
+  color: red;
+}
+
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background-color: green;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  cursor: pointer;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+article[role=main] {
+  width: 62.5%;
+}
+
+aside[role=complementary] {
+  width: 31.25%;
+  margin-left: auto;
+}/*# sourceMappingURL=style.css.map */
